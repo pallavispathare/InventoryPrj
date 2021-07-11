@@ -1,0 +1,14 @@
+F:\Inventory\InventoryProj\DBMapper\bin\Debug\DBMapper.dll.config
+F:\Inventory\InventoryProj\DBMapper\bin\Debug\DBMapper.dll
+F:\Inventory\InventoryProj\DBMapper\bin\Debug\DBMapper.pdb
+F:\Inventory\InventoryProj\DBMapper\bin\Debug\EntityFramework.dll
+F:\Inventory\InventoryProj\DBMapper\bin\Debug\EntityFramework.SqlServer.dll
+F:\Inventory\InventoryProj\DBMapper\bin\Debug\EntityFramework.xml
+F:\Inventory\InventoryProj\DBMapper\bin\Debug\EntityFramework.SqlServer.xml
+F:\Inventory\InventoryProj\DBMapper\obj\Debug\DBMapper.csprojAssemblyReference.cache
+F:\Inventory\InventoryProj\DBMapper\obj\Debug\DBMapper.csproj.CoreCompileInputs.cache
+F:\Inventory\InventoryProj\DBMapper\obj\Debug\DBMapper.csproj.CopyComplete
+F:\Inventory\InventoryProj\DBMapper\obj\Debug\DBMapper.dll
+F:\Inventory\InventoryProj\DBMapper\obj\Debug\DBMapper.pdb
+F:\Inventory\InventoryProj\DBMapper\obj\Debug\DBMapper.Migrations.AddedItemTable.resources
+F:\Inventory\InventoryProj\DBMapper\obj\Debug\DBMapper.csproj.GenerateResource.cache

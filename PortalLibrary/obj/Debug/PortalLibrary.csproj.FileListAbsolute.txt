@@ -1,0 +1,17 @@
+F:\Inventory\InventoryProj\PortalLibrary\bin\Debug\PortalLibrary.dll.config
+F:\Inventory\InventoryProj\PortalLibrary\bin\Debug\PortalLibrary.dll
+F:\Inventory\InventoryProj\PortalLibrary\bin\Debug\PortalLibrary.pdb
+F:\Inventory\InventoryProj\PortalLibrary\bin\Debug\AutoMapper.dll
+F:\Inventory\InventoryProj\PortalLibrary\bin\Debug\DBMapper.dll
+F:\Inventory\InventoryProj\PortalLibrary\bin\Debug\EntityFramework.dll
+F:\Inventory\InventoryProj\PortalLibrary\bin\Debug\EntityFramework.SqlServer.dll
+F:\Inventory\InventoryProj\PortalLibrary\bin\Debug\DBMapper.pdb
+F:\Inventory\InventoryProj\PortalLibrary\bin\Debug\DBMapper.dll.config
+F:\Inventory\InventoryProj\PortalLibrary\bin\Debug\AutoMapper.xml
+F:\Inventory\InventoryProj\PortalLibrary\bin\Debug\EntityFramework.xml
+F:\Inventory\InventoryProj\PortalLibrary\bin\Debug\EntityFramework.SqlServer.xml
+F:\Inventory\InventoryProj\PortalLibrary\obj\Debug\PortalLibrary.csprojAssemblyReference.cache
+F:\Inventory\InventoryProj\PortalLibrary\obj\Debug\PortalLibrary.csproj.CoreCompileInputs.cache
+F:\Inventory\InventoryProj\PortalLibrary\obj\Debug\PortalLibrary.csproj.CopyComplete
+F:\Inventory\InventoryProj\PortalLibrary\obj\Debug\PortalLibrary.dll
+F:\Inventory\InventoryProj\PortalLibrary\obj\Debug\PortalLibrary.pdb
