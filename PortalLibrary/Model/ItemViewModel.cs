@@ -15,4 +15,9 @@ namespace PortalLibrary.Model
         public string ItemDescription { get; set; }
         public decimal ItemPrice { get; set; }
     }
+    public class ItemViewListModel
+    {
+        public int TotalRows { get; set; }
+        public List<ItemViewModel> ItemViewModels { get; set; }
+    }
 }

@@ -17,10 +17,10 @@ namespace API.Controllers
     {
         EFDBContext db;
         [Route("api/Item/GetAllItemAsync")]
-        public async Task<List<ItemViewModel>> GetAllItemAsync()
+        public async Task<ItemViewListModel> GetAllItemAsync(int pageNo = 1, int size = 10)
         {
            
-          var itemLst= await ItemHelper.GetItemListAsync();
+          var itemLst= await ItemHelper.GetItemListAsync( pageNo, size);
 
             return  itemLst;
         }

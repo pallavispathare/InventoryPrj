@@ -1,6 +1,7 @@
 ﻿
 using DBMapper;
 using DBMapper.Models;
+using Logging;
 using PortalLibrary.Model;
 using System;
 using System.Collections.Generic;
@@ -14,28 +15,32 @@ namespace PortalLibrary
 {
     public class ItemHelper
     {
-        public static async Task<List<ItemViewModel>> GetItemListAsync()
+        public static async Task<ItemViewListModel> GetItemListAsync(int pageNo = 1, int size = 10)
         {
             EFDBContext db = null;
 
-            List<ItemViewModel> lstSpecialityModel = new List<ItemViewModel>();
-            List<Item> lstSpeciality = new List<Item>();
+            List<ItemViewModel> lstItemViewModel = new List<ItemViewModel>();
+            ItemViewListModel ItemViewListModel = new ItemViewListModel();
+            List<Item> lstItem = new List<Item>();
 
             try
             {
                 using (db = new EFDBContext())
                 {
-                    lstSpeciality = await db.items.OrderBy(x => x.ItemName).ToListAsync();
+                    lstItem = await db.items.OrderBy(x => x.ItemName).ToListAsync();
                     GenericMapper<ItemViewModel, Item> objGenericMapper = new GenericMapper<ItemViewModel, Item>();
-                    lstSpecialityModel = objGenericMapper.MapDataList(lstSpeciality);
+                    lstItemViewModel = objGenericMapper.MapDataList(lstItem);
+                    int recodCount = lstItemViewModel.Count(); int pageStart = (pageNo - 1) * size;
+                    ItemViewListModel.TotalRows = recodCount;
+                    ItemViewListModel.ItemViewModels = lstItemViewModel.Skip(pageStart).Take(size).ToList();
                 }
             }
             catch (Exception ex)
             {
-               // Logging.Logging.WriteErrorLog(ex);
+               Logging.Logging.WriteErrorLog(ex);
             }
 
-            return lstSpecialityModel;
+            return ItemViewListModel;
         }
 
         public async static Task<string> InsertItemAsync(ItemViewModel ItemViewModel)
@@ -53,7 +58,7 @@ namespace PortalLibrary
             }
             catch (Exception ex)
             {
-                // Logging.Logging.WriteErrorLog(ex);
+                 Logging.Logging.WriteErrorLog(ex);
             }
             return "Item Added Successfully";
         }
@@ -74,7 +79,7 @@ namespace PortalLibrary
             }
             catch (Exception ex)
             {
-                // Logging.Logging.WriteErrorLog(ex);
+                Logging.Logging.WriteErrorLog(ex);
             }
             return "Item Updated Successfully";
         }
@@ -93,7 +98,7 @@ namespace PortalLibrary
             }
             catch (Exception ex)
             {
-                // Logging.Logging.WriteErrorLog(ex);
+                Logging.Logging.WriteErrorLog(ex);
             }
             return "Item Deleted Successfully";
         }
